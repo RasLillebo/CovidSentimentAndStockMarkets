@@ -29,7 +29,7 @@ Now, the dataset consist of the following variables:
 My goal is to predict Dow Jones Industrial Average Closing price. I will only be using simple OLS as estimation method to keep it relatively simple.
 Once the data has been cleared from NA & NAN's, I calculate the differenced variables to transform them into stationary processes. Otherwise, I would have regressed a time trend, which would overestimate the correlation between the variables. Once the data is stationary, I regress the dataset on the adjusted DOW price.
 
-(PICTURE Coming Soon)
+https://github.com/RasLillebo/UtilizingPCAonCovidAndFF/issues/2#issue-776079551
 
 It is evident that of all the variables; CMA, Panic_index and HML are the 3 most relevant when considering the p-values. I will keep that in mind for later.
 Now, I will be utilizing PCA to decrease the number of variables. But what is PCA?:
