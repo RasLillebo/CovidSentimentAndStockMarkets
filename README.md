@@ -108,4 +108,10 @@ I Can thereby conclude that:
 1. Principle component analysis can reduce the amount of variables 
 2. A fixed amount of principle Components can actually explain more of the variance that an equal amount of regular variables. 
 
-I hope you found this very simple exercise interesting. 
+I hope you found this very simple exercise interesting and maybe even learned something!
+At least I am now comfortable with the US covid-data and how it interacts with the most common financial data.
+
+Thanks for reading.
+Regards.
+
+
