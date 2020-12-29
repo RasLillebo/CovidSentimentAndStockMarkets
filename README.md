@@ -28,9 +28,11 @@ Now, the dataset consist of the following variables:
 
 My goal is to predict Dow Jones Industrial Average Closing price. I will only be using simple OLS as estimation method to keep it relatively simple.
 Once the data has been cleared from NA & NAN's, I calculate the differenced variables to transform them into stationary processes. Otherwise, I would have regressed a time trend, which would overestimate the correlation between the variables. Once the data is stationary, I regress the dataset on the adjusted DOW price.
-
-
-https://github.com/RasLillebo/UtilizingPCAonCovidAndFF/issues/2#issue-776079551
+´´´
+Diff_Data = Data-lag(Data, 1)
+Reg_diff = lm(Diff_Data$Adjusted.x~., data=Diff_Data)
+summary(Reg_diff)
+´´´
 
 <img width="372" alt="Picture1 PCA Covid" src="https://user-images.githubusercontent.com/69420936/103313096-51b21900-4a1f-11eb-9b86-47258e0ee18e.png">
 
