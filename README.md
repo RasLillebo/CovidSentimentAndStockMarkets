@@ -1,4 +1,4 @@
-# CovidSentimentInScandinavia
+# Utilizing PCA on Covid-19- & Fama-French Data
 In my preparation for my master thesis, I came across a dataset of covid-19-related sentiment scores for multiple countries. To get the data under my skin for the project to come, I decided to make this small exercise: I will use the covid-19 sentiment variables for the US, join it onto multiple Fama-french-variables and two stock indices; hereby creating a high-dimensional datasset... sort of (22 variables). - But that's enough for me to prove a point! :)
 If you have taken a glance in my repositories, you will find that I am quite interested in machine learning. Therefore, I will use this dataset to utilize a simple PCA and find whether the top 3 Principle components are better predictors than the top 3 variables from the original dataset.
 
