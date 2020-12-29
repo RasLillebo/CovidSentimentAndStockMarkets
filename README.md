@@ -1,6 +1,6 @@
 # CovidSentimentInScandinavia
-In my preparation for my master thesis, I came across a dataset of covid-19-related sentiment scores for Scandinavia (Denmark, Sweden, Norway, Finland).
-If you have taken a glance in my repositories, you will find that I am quite interested in sentiment analysis. I also used the dataset in my ecommerce-job, where I analysed the correlation between covid-sentiment and online purchases: I will post a simulated study of that later.
+In my preparation for my master thesis, I came across a dataset of covid-19-related sentiment scores for multiple countries. To get to data under my skin, I decided to make this small exercise: I will use the covid-19 sentiment variables for the US, join it onto multiple Fama-french-variables and two stock indices; hereby creating a high-dimensional datasset... sort of (22 variables). - But that's enough for me to prove a point! :)
+If you have taken a glance in my repositories, you will find that I am quite interested in machine learning. Therefore, I will use this dataset to utilize a simple PCA and find whether the top 3 PC's are better predictors than the top 3 variables from the original dataset.
 
 Now, the dataset consist of the following variables:
 - Date
@@ -17,7 +17,20 @@ Now, the dataset consist of the following variables:
 - Sentiment Index
 - Infodemic Index
 - Media Coverage Index
+- Dow Jones Industrial Average Adjusted closing price
+- S&P500 Adjusted closing price
+- Market Risk-free rate
+- SMB
+- HML
+- RMW
+- CMA
+- Risk-free rate
 
-Of these variables, I will likely only be using a handful:My goal is to map the correlation between the variables and select af few noticable ones. I will then be using these select variables to forecast the four indices of the the specific country, and check which country specific stock index is most affected by these sentiment variables. In the forecast I will use a simply rolling regression, but this is subject to change.
+My goal is to predict Dow Jones Industrial Average Closing price. I will only be using simple OLS as estimation method to keep it relatively simple.
+Once the data has been cleared from NA & NAN's, I proceed to regress my variables:
+
+(PICTURE)
+
+It is evident that the R-squared is almost 1.
 
 (Work in Progress)
